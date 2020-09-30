@@ -9,7 +9,8 @@ output:
     highlight: textmate
 ---
 
-MAKE SURE YOU READ AND FOLLOW **ALL** INSTRUCTIONS ON THE INSTRUCTION DOCUMENT. 
+## Link to my GitHub repository:
+### https://github.com/ccheung9595/Data2401_RProj1.git 
 
 ### Load packages
 
