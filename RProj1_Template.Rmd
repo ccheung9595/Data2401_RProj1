@@ -6,6 +6,7 @@ output:
   html_document: 
     fig_height: 10
     fig_width: 10
+    highlight: textmate
 ---
 
 MAKE SURE YOU READ AND FOLLOW **ALL** INSTRUCTIONS ON THE INSTRUCTION DOCUMENT. 
@@ -46,7 +47,7 @@ dino_data %>%
 
 Plotting the data in the star dataset:
 
-```{r plot-star}
+```{r plot-star, fig.height=3, fig.width=3}
 star_data <- datasaurus_dozen %>%
   filter(dataset == "star")
 ggplot(data = star_data, mapping = aes(x = x, y = y)) +
@@ -66,7 +67,7 @@ The correlation coefficient between x and y for the dino dataset compared to the
 
 Plotting the data in the circle dataset:
 
-```{r plot-circle}
+```{r plot-circle, fig.height=3, fig.width=3}
 circle_data <- datasaurus_dozen %>%
   filter(dataset == "circle")
 ggplot(data = circle_data, mapping = aes(x = x, y = y)) +
