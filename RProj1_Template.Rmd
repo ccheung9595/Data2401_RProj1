@@ -57,22 +57,35 @@ star_data %>%
   summarize(r = cor(x, y))
 ```
 
-The correlation coefficient between x and y for the dino dataset compared to the star dataset are both negative and the absolute difference between the 2 is 0.00151075.
+The correlation coefficient between x and y for the dino dataset compared to the star dataset are both negative and the absolute difference between the two is 0.00151075 with the dino dataset having a larger negative number than the star dataset.
 
 ### Exercise 4
 
-(Add code and narrative as needed. Note that two R chunks are given but they are not labeled. Use the convention from above to name them appropriately.)
+Plotting the data in the circle dataset:
 
-```{r}
-
-
+```{r plot-circle}
+circle_data <- datasaurus_dozen %>%
+  filter(dataset == "circle")
+ggplot(data = circle_data, mapping = aes(x = x, y = y)) +
+  geom_point()
 ```
 
-```{r}
+Calculating the correlation between 'x' and 'y' in the circle dataset:
 
-
+```{r cor-circle}
+circle_data %>%
+  summarize(r = cor(x, y))
 ```
+
+The correlation coefficient between x and y for the dino dataset compared to the circle dataset are both negative and the absolute difference between the two is 0.00387151 with the circle dataset having a larger negative number than the dino dataset.
 
 ### Exercise 5
 
 (Add code and narrative as needed. To add R chunks either type out the backticks, curly braces, and the letter `r` or use the Insert chunk button above, with the green +C.)
+
+
+
+```{r}
+
+```
+
